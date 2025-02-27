@@ -1,0 +1,14 @@
+inputSet:
+  name: git-input
+  identifier: gitinput
+  orgIdentifier: default
+  projectIdentifier: eureka
+  pipeline:
+    identifier: eureka
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
